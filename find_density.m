@@ -6,18 +6,16 @@ Rx = integrate_peak( Xp(:,2), t_peakx, t1, t_interval);
 Ry = integrate_peak( Yp(:,3), t_peaky, t1, t_interval);
 Rz = integrate_peak( Zp(:,2), t_peakz, t1, t_interval);
 
-% Normalise
 Rxd = integrate_peak( Xd(:,2), t_peakx, t1, t_interval);
 Ryd = integrate_peak( Xd(:,3), t_peaky, t1, t_interval);
 Rzd = integrate_peak( Xd(:,2), t_peakz, t1, t_interval);
 
-Rxn = Rx / Rxd;
-Ryn = Ry / Ryd;
-Rzn = Rz / Rzd;
+Rxn = Rxd / Rx;
+Ryn = Ryd / Ry;
+Rzn = Rzd / Rz;
 
 
-
-rho = [1/2 + Rzn, Rxn - 1i * Ryn; Rxn + 1i * Ryn, 1/2 - Rzn] ./2 ;
+rho = [1+ Rzn, Rxn - 1i * Ryn; Rxn + 1i * Ryn, 1 - Rzn] ./2 ;
 
 
 end
