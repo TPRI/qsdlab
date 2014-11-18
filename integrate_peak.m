@@ -7,11 +7,11 @@ t = data(:,1);
 
 %Assign relevent magnetisation data to column vector s
 if x_y_or_z == 'x'
-    s = data(:,1);
+    s = data(:,3);
 elseif x_y_or_z == 'y'
     s = data(:,2);
 elseif x_y_or_z == 'z'
-    s = data(:,1);
+    s = data(:,3);
 end
 
 %Find the indices coressponding to the integration limits
