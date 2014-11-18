@@ -7,4 +7,6 @@ chi_exp = process_tom( rho1exp, rho4exp, rho2exp, rho3exp )
 
 plot_complex_matrix(chi_exp)
 
+chi_X = mock_run_process_tom_temp( 'X' )
+
 fidelity(chi_exp, chi_X)

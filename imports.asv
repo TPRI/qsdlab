@@ -28,6 +28,8 @@ Yminus_BB1proc = importdata('C:\Users\trinnes\Documents\Labs\QSD labs\Quantum To
 Zplus_BB1proc = importdata('C:\Users\trinnes\Documents\Labs\QSD labs\Quantum Tomography Lab\Quantum Tomography Lab\Lab data renamed\Quantum Process Tomography BB1X\Z+ in BB1.mat');
 Zminus_BB1proc = importdata('C:\Users\trinnes\Documents\Labs\QSD labs\Quantum Tomography Lab\Quantum Tomography Lab\Lab data renamed\Quantum Process Tomography BB1X\Z- in BB1.mat');
 
+Xplus_BB1proc(:,[i,j])=A(:,[j,i])
+Yminus_BB1proc(:,[i,j])=A(:,[j,i])
 
 %XBB1 process Tomography
 Xplus_norm_dec = importdata('C:\Users\trinnes\Documents\Labs\QSD labs\Quantum Tomography Lab\Quantum Tomography Lab\Lab data renamed\Quantum Process Tomography Deco 400\X-rot (normalisation for deco).mat');
