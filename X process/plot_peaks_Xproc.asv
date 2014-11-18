@@ -1,0 +1,39 @@
+figure(1,'X process Norm')
+title('X process Norm')
+
+subplot(2,3,1)
+plot( Xplus(:,1), Xplus(:,2), Xplus(:,1), Xplus(:,3) )
+title('X+')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
+
+
+subplot(2,3,2)
+plot( Yplus(:,1), Yplus(:,2), Yplus(:,1), Yplus(:,3) )
+title('Y+')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
+
+subplot(2,3,3)
+plot( Zplus(:,1), Zplus(:,2), Zplus(:,1), Zplus(:,3) )
+title('Z+')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
+
+subplot(2,3,4)
+plot( Xminus(:,1), Xminus(:,2), Xminus(:,1), Xminus(:,3) )
+title('X-')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
+
+subplot(2,3,5)
+plot( Yminus(:,1), Yminus(:,2), Yminus(:,1), Yminus(:,3) )
+title('Y-')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
+
+subplot(2,3,6)
+plot( Zminus(:,1), Zminus(:,2), Zminus(:,1), Zminus(:,3) )
+title('Z-')
+xlabel('Time (s)')
+ylabel('Magnetisation (a.u)')
